@@ -87,4 +87,5 @@ NEWSPIDER_MODULE = 'datalad_crawler.spiders'
 
 ############## I added
 #LOG_LEVEL = 'ERROR'
+COOKIES_DEBUG=True
 

@@ -18,6 +18,15 @@ print len(s.keys())
 data_sets = s['Data Sets']
 print data_sets.keys()
 vc = data_sets['Visual cortex']
-print vc
+#print vc
+vc
 
 s.close()
+
+for section, section_datasets in data_sets.items():
+    for dataset, content in section_datasets.items():
+        #print dataset, content
+        print dataset
+        for k, v in content.items():
+            if k.startswith('About '):
+                print '  '+'\n  '.join(v['h2s']) 
